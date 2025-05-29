@@ -1,0 +1,66 @@
+body {
+    /* background should take up the whole screen */
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0f0f0f;
+
+    color: #ce3a3a;
+    font-family: "Fragment Mono", monospace;
+    font-style: normal;
+
+    padding: 1.5em;
+}
+
+a {
+    color: #ce3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+p {
+    font-size: 12px;
+}
+
+strong {
+    background-color: #ce3a3a;
+    color: #0f0f0f;
+}
+
+div {
+    width: fit-content;
+    text-align: center;
+}
+
+main {
+    /* elements side by side */
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.huge-spacer {
+    height: 1.5em;
+}
+
+.biography {
+    max-width: 400px;
+}
+
+/* switch flex direction on mobile */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .biography {
+        max-width: 100%;
+    }
+}
