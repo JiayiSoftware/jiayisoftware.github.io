@@ -54,6 +54,18 @@ main {
     max-width: 400px;
 }
 
+.gallery {
+    min-width: 600px;
+    height: calc(100vh - 20em);
+    overflow-y: auto;
+}
+
+.gallery img {
+    width: 600px;
+    height: auto;
+    margin-top: 1em;
+}
+
 /* switch flex direction on mobile */
 @media (max-width: 600px) {
     main {
